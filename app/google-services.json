@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071292728196",
+    "project_id": "degrau-f55a5",
+    "storage_bucket": "degrau-f55a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071292728196:android:44e9ee330341afa53a13d1",
+        "android_client_info": {
+          "package_name": "com.degrau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071292728196-v2acc1hhfjqr9ak68uaeehab8hdvf19h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqiARHZWT-U-r-hiI-boOYzA3u5gyXRME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071292728196-v2acc1hhfjqr9ak68uaeehab8hdvf19h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
