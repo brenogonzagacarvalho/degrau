@@ -11,6 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SplashActivity"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="353dp" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="356dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
