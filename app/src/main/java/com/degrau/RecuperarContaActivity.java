@@ -33,7 +33,6 @@ public class RecuperarContaActivity extends AppCompatActivity {
         }else{
             Toast.makeText(this,"Informe seu e-mail", Toast.LENGTH_SHORT).show();
         }
-
     }
     private void recuperarSenhaFirebase(String email){
         mAuth.sendPasswordResetEmail(email).addOnCompleteListener(task -> {

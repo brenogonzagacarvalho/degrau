@@ -32,14 +32,9 @@ public class CadastroActivityProfessor extends AppCompatActivity {
         TextView criarContaCalendly = (TextView) findViewById(R.id.editSobreProf);
         criarContaCalendly.setMovementMethod(LinkMovementMethod.getInstance());
     }
-
-
     private void validarDados(){
         String email = binding.editEmailProf.getText().toString().trim();
         String senha = binding.editSenhaProf.getText().toString().trim();
-
-
-
         if(!email.isEmpty()){
             if(!senha.isEmpty()){
                 criarContaFirebase(email, senha);
@@ -50,8 +45,6 @@ public class CadastroActivityProfessor extends AppCompatActivity {
         }else{
             Toast.makeText(this,"Informe seu e-mail", Toast.LENGTH_SHORT).show();
         }
-
-
     }
 
     private void criarContaFirebase(String email,String senha){
