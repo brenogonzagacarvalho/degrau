@@ -4,6 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login"
     tools:context=".RecuperarContaActivity">
+
+    <EditText
+        android:id="@+id/RecuperarEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="viewStart"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnviarEmail"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="232dp"
+
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Enviar"
+        android:textColor="#64C5E5"
+        app:cornerRadius="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RecuperarEmail" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarEmail"
+        app:layout_constraintVertical_bias="0.898"
+        app:srcCompat="@drawable/logo_degrau" />
+
+    <TextView
+        android:id="@+id/recuperarTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Resetar Senha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/RecuperarEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,14 +3,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/logoDegrau"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_login"
+    android:id="@+id/logoDegrau"
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editEmailProf"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editSenha"
+        android:id="@+id/editSenhaProf"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -45,17 +45,17 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmailProf" />
 
     <TextView
-        android:id="@+id/textEsqueceuSenha"
+        android:id="@+id/esqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="Esqueceu sua senha ?"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/editSenha"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+        app:layout_constraintEnd_toEndOf="@+id/editSenhaProf"
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaProf" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -68,32 +68,29 @@
         android:text="Permanecer Conectado"
         android:textColor="@color/white"
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/textEsqueceuSenha"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha"
+        app:layout_constraintEnd_toStartOf="@+id/esqueceuSenha"
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaProf"
         tools:visibility="visible" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="197dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="162dp"
+        android:id="@+id/btnEntrar"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="232dp"
 
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
         android:text="Entrar"
         android:textColor="#64C5E5"
         app:cornerRadius="45dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/esqueceuSenha" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
         android:layout_marginEnd="236dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"

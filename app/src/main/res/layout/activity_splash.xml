@@ -6,11 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SplashActivity"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="356dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="@color/white"
+        android:text="Criar Conta"
+        android:textColor="#64C5E5"
+        app:cornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="234dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321"
+        app:srcCompat="@drawable/logo_degrau" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
